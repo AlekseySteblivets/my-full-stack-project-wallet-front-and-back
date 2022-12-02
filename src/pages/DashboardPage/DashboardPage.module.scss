@@ -1,0 +1,20 @@
+@import '../../assets/styles/media';
+@import '../../assets/styles/_font.scss';
+@import '../../assets/styles/colors';
+
+
+.container {
+    margin: 0 auto;
+    width: 1280px;
+    position: relative;
+}
+
+.backg {
+    padding-top: 16px;
+    padding-bottom: 40px;
+    background-image: url(../../assets/images/BackgrDesctop.png)
+}
+
+// .home_side{
+//     display: flex;
+// }
