@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/AlekseySteblivets/my-full-stack-project-wallet-front-and-back/static/css/main.b63c81bc.css",
+    "main.js": "/AlekseySteblivets/my-full-stack-project-wallet-front-and-back/static/js/main.fbcf98fc.js",
+    "static/media/BackgrDesctop.png": "/AlekseySteblivets/my-full-stack-project-wallet-front-and-back/static/media/BackgrDesctop.147b8e07612aa537b52d.png",
+    "static/media/Vector.png": "/AlekseySteblivets/my-full-stack-project-wallet-front-and-back/static/media/Vector.cdb4a1d0c530ac6dbaaf.png",
+    "static/media/Wallet-min.svg": "/AlekseySteblivets/my-full-stack-project-wallet-front-and-back/static/media/Wallet-min.d393325974f7d96fe1e48e29fabd85ed.svg",
+    "index.html": "/AlekseySteblivets/my-full-stack-project-wallet-front-and-back/index.html",
+    "static/media/Statistic-min.svg": "/AlekseySteblivets/my-full-stack-project-wallet-front-and-back/static/media/Statistic-min.a6b0de5e917d48b4ad1851a848d72db3.svg",
+    "static/media/Exit-min.svg": "/AlekseySteblivets/my-full-stack-project-wallet-front-and-back/static/media/Exit-min.3ba889c029f87ad8c958717af7a1093f.svg",
+    "static/media/Home-min.svg": "/AlekseySteblivets/my-full-stack-project-wallet-front-and-back/static/media/Home-min.eb0028be86e5e8e8b41c3b17c650ac97.svg",
+    "main.b63c81bc.css.map": "/AlekseySteblivets/my-full-stack-project-wallet-front-and-back/static/css/main.b63c81bc.css.map",
+    "main.fbcf98fc.js.map": "/AlekseySteblivets/my-full-stack-project-wallet-front-and-back/static/js/main.fbcf98fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b63c81bc.css",
+    "static/js/main.fbcf98fc.js"
+  ]
+}
