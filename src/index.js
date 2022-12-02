@@ -8,7 +8,7 @@ import './assets/styles/index.scss';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/AlekseySteblivets/my-full-stack-project-wallet-front-and-back">
+    <BrowserRouter basename="wallet/">
       <App />
     </BrowserRouter>
   </React.StrictMode>

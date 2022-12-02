@@ -1,8 +1,19 @@
 .diagram {
-    width: 400px;
-    height: 400px;
-    background-color: wheat;
-    position: absolute;
-    left: 700px;
-    top: 150px;
+  // width: 400px;
+  // height: 400px;
+  // background-color: wheat;
+  // position: absolute;
+  // left: 700px;
+  // top: 150px;
+}
+
+.diagram {
+  outline: 1px solid black;
+  width: 280px;
+  height: 280px;
+  margin-bottom: 32px;
+}
+
+.title {
+  margin-bottom: 8px;
 }

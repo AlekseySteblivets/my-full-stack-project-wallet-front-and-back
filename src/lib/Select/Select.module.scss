@@ -1,0 +1,72 @@
+@import '../../assets/styles/font';
+@import '../../assets/styles/colors';
+
+.textBtnMoney {
+  width: 280px;
+  height: 50px;
+  padding-left: 20px;
+  text-align: start;
+  background-color: $color-white;
+  border-color: $color-main-text;
+  border-radius: 30px;
+  cursor: pointer;
+  @include font-circe-small;
+}
+
+// .wrapper {
+//   @include font-navigation-text-money;
+// }
+.container {
+  position: relative;
+}
+
+textBtnMoney:hover {
+  cursor: pointer;
+}
+
+.textBtnMoney::after {
+  content: '';
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-image: url('../../assets/images/vector-on-select.svg');
+  width: 18px;
+  height: 9px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.expanded::after {
+  content: '';
+  transform: rotate(180deg);
+}
+
+.options {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  border: transparent;
+  // background-color: $color-white;
+
+  // width: 114px;
+  left: 0px;
+  // top: 20px;
+}
+
+.show {
+  display: block;
+}
+
+.item {
+  padding: 20px;
+  text-align: start;
+}
+
+.item:active,
+.item:focus,
+.item:hover,
+.item[aria-selected='true'] {
+  // background: $color-light-grey;
+  cursor: pointer;
+}

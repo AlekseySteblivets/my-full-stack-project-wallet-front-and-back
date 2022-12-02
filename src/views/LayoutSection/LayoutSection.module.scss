@@ -1,0 +1,23 @@
+@import '../../assets/styles/colors';
+@import '../../assets/styles/media';
+
+.section {
+  outline: 1px solid tomato;
+  margin: 0 auto;
+  width: 320px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $color-grey-light-transparent;
+
+  @include media-tablet {
+    width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  @include media-desktop {
+    max-width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
