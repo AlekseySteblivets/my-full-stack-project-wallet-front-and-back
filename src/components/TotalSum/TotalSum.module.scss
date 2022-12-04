@@ -1,0 +1,31 @@
+@import '../../assets/styles/font';
+@import '../../assets/styles/colors';
+
+.block {
+  padding-bottom: 48px;
+}
+
+.blockSum {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px 0px 20px;
+  @include font-circe-medium-light;
+}
+
+.sumExpenses {
+  color: $color-red;
+  line-height: 1.47;
+}
+
+.sumIncome {
+  color: $color-green;
+  line-height: 1.47;
+}
+
+.sumExpensesIntoDiagram {
+  position: absolute;
+  left: 140px;
+  transform: translateX(-50%);
+  top: 185px;
+  @include font-poppins-medium;
+}

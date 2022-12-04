@@ -9,6 +9,7 @@ $color-grey-light: #bdbdbd;
 $color-grey-light-transparent: #e7eaf2;
 $color-grey-bg: rgba(255, 255, 255, 0.7);
 $color-grey-light-more: #e0e0e0;
+$color-grey-dark: #dcdcdf;
 
 $color-red: #ff6596;
 $color-yellow: #fed057;
@@ -22,3 +23,15 @@ $color-blue: #6e78e8;
 $color-green-light: #81e1ff;
 $color-green: #24cca7;
 $color-green-deep: #00ad84;
+
+:export {
+  colorYellow: $color-yellow;
+  colorPink: $color-pink;
+  colorPinkDeep: $color-pink-deep;
+  colorBlueLight: $color-blue-light;
+  colorBlue: $color-blue;
+  colorAccent: $color-accent;
+  colorGreenLight: $color-green-light;
+  colorGreen: $color-green;
+  colorGreenDeep: $color-green-deep;
+}

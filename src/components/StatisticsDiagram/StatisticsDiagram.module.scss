@@ -1,19 +1,11 @@
-.diagram {
-  // width: 400px;
-  // height: 400px;
-  // background-color: wheat;
-  // position: absolute;
-  // left: 700px;
-  // top: 150px;
-}
-
-.diagram {
-  outline: 1px solid black;
-  width: 280px;
-  height: 280px;
-  margin-bottom: 32px;
-}
+@import '../../assets/styles/font';
 
 .title {
+  text-align: left;
   margin-bottom: 8px;
+  @include font-poppins-small-big;
+}
+
+.blockdiagram {
+  position: relative;
 }

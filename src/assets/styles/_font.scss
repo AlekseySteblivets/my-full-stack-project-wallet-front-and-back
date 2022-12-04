@@ -30,6 +30,12 @@
   line-height: 1.47;
 }
 
+@mixin font-circe-medium-light {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.125;
+}
+
 // mixins for font Poppins
 @mixin font-poppins-small-light {
   font-family: 'Poppins';

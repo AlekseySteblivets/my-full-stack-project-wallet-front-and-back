@@ -6,48 +6,10 @@ import OutsideClickHandler from '../OutsideClickHandler/OutsideClickHandler';
 
 import styles from './Select.module.scss';
 
-const months = [
-  // 'Month',
-  'january',
-  'february',
-  'march',
-  'april',
-  'may',
-  'june',
-  'july',
-  'august',
-  'september',
-  'october',
-  'november',
-  'december',
-];
-//   january: 1,
-//   february: 2,
-//   march: 3,
-//   april: 4,
-//   may: 5,
-//   june: 6,
-//   july: 7,
-//   august: 8,
-//   september: 9,
-//   october: 10,
-//   november: 11,
-//   december: 12,
-// };
-
-const years = {
-  2018: 1,
-  2019: 2,
-  2020: 3,
-  2021: 4,
-  2022: 5,
-  2023: 6,
-};
-
 class Select extends Component {
   state = {
     isOptionsOpen: false,
-    selectedOption: 11,
+    selectedOption: 0,
   };
 
   // componentDidUpdate() {
@@ -129,8 +91,8 @@ class Select extends Component {
     // const {
     //   data: { currencies, loading },
     // } = this.props;
-    console.log('months:', months);
-
+    console.log('this.props.arrData:', this.props.arrData);
+    const arrData = this.props.arrData;
     return (
       <div className={styles.wrapper}>
         {/* {!loading && ( */}
@@ -140,13 +102,13 @@ class Select extends Component {
             aria-haspopup="listbox"
             aria-expanded={this.state.isOptionsOpen}
             className={cn(
-              styles.textBtnMoney,
+              styles.textBtn,
               this.state.isOptionsOpen ? styles.expanded : ''
             )}
             onClick={this.toggleOptions}
             onKeyDown={this.handleListKeyDown}
           >
-            {months[this.state.selectedOption]}
+            {arrData[this.state.selectedOption]}
           </button>
           <OutsideClickHandler
             onOutsideClick={() => {
@@ -159,16 +121,16 @@ class Select extends Component {
                 [styles.options]: true,
               })}
               role="listbox"
-              aria-activedescendant={months[this.state.selectedOption]}
+              aria-activedescendant={arrData[this.state.selectedOption]}
               tabIndex={-1}
               onKeyDown={this.handleListKeyDown}
             >
-              {months.map((month, index) => (
+              {arrData.map((month, index) => (
                 <li
                   className={styles.item}
-                  key={months[index]}
-                  id={months[index]}
-                  role={months[index]}
+                  key={arrData[index]}
+                  id={arrData[index]}
+                  role={arrData[index]}
                   aria-selected={this.state.selectedOption === index}
                   tabIndex={0}
                   onKeyDown={this.handleKeyDown(index)}
@@ -176,7 +138,7 @@ class Select extends Component {
                     this.setSelectedThenCloseDropdown(index);
                   }}
                 >
-                  {months[index]}
+                  {arrData[index]}
                 </li>
               ))}
             </ul>
